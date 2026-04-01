@@ -1,0 +1,4 @@
+site_name: MkDocs Guide
+site_url: https://khde.github.io/mkdocs-guide
+theme:
+  name: material
