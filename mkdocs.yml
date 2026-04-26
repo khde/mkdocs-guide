@@ -1,4 +1,65 @@
 site_name: Diataxis Material for MkDocs Guide
 site_url: https://khde.github.io/diataxis-material-mkdocs-guide
+repo_url: https://github.com/khde/diataxis-material-mkdocs-guide
+edit_uri: https://github.com/khde/diataxis-material-mkdocs-guide/tree/master/docs
+site_description: Diátaxis-based documentation for Material for MkDocs
+docs_dir: docs
+
+nav:
+  - Home: index.md
+  - Tutorials:
+      - tutorials/index.md
+  - How-to Guides:
+      - how-to/index.md
+  - Reference:
+      - reference/index.md
+  - Explanation:
+      - explanation/index.md
+
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github
+  
+  features:
+    - content.action.view
+    - content.code.copy
+    - navigation.footer
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+  
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  
+  font:
+    text: Inter
+    code: Google Sans Code
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - footnotes
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+
+extra:
+  generator: false
