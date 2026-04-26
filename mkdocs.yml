@@ -1,4 +1,4 @@
-site_name: MkDocs Guide
-site_url: https://khde.github.io/mkdocs-guide
+site_name: Diataxis Material for MkDocs Guide
+site_url: https://khde.github.io/diataxis-material-mkdocs-guide
 theme:
   name: material

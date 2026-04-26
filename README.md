@@ -1,1 +1,1 @@
-# MkDocs Guide
+# Diataxis Material for MkDocs Guide
