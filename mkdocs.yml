@@ -11,6 +11,9 @@ nav:
       - tutorials/index.md
       - Getting started: tutorials/getting-started.md
       - First site: tutorials/first-site.md
+      - Adding pages and navigation: tutorials/adding-pages-and-navigation.md
+      - Configuring your site: tutorials/configuring-your-site.md
+      - Using Markdown extensions: tutorials/markdown-extensions.md
   - How-to Guides:
       - how-to/index.md
       - Deploy to GitHub Pages: how-to/deploy-github-pages.md
