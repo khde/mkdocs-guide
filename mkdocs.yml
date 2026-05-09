@@ -19,7 +19,7 @@ nav:
       - Deploy to GitHub Pages: how-to/deploy-github-pages.md
       - Generate PDF: how-to/generate-pdf.md
       - Dark/Light Mode Toggle: how-to/dark-light-mode-toggle.md
-      - Show editing information: how-to/show-edit-information.md
+      - Page information: how-to/show-page-information.md
   - Reference:
       - reference/index.md
       - Commands: reference/commands.md
@@ -99,6 +99,13 @@ plugins:
           attributes:
             target: _blank
             href: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.href
+  - git-committers:
+      repository: khde/diataxis-material-mkdocs-guide
+      branch: master
+  - git-revision-date-localized:
+      locale: en
+      timezone: Europe/Amsterdam
+      type: timeago
 
 extra:
   generator: false

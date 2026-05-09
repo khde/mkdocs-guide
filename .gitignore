@@ -5,6 +5,7 @@ venv
 
 site
 build
+.cache
 
 TODO.txt
 todo.txt
