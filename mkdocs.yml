@@ -26,6 +26,7 @@ nav:
       - YAML Configuration: reference/yaml-configuration.md
   - Explanation:
       - explanation/index.md
+  - Download: download.md
   - About: about.md
 
 theme:
@@ -82,6 +83,22 @@ markdown_extensions:
 
 plugins:
   - search
+  - exporter:
+      formats:
+        pdf:
+          enabled: !ENV [MKDOCS_EXPORTER_PDF, false]
+          concurrency: 8
+          aggregator:
+            enabled: true
+            covers: all
+            output: diataxis-mkdocs-docs.pdf
+      buttons:
+        - title: View as PDF
+          icon: fontawesome-regular-file-pdf
+          enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
+          attributes:
+            target: _blank
+            href: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.href
 
 extra:
   generator: false
