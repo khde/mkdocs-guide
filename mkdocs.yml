@@ -18,6 +18,7 @@ nav:
       - how-to/index.md
       - Deploy to GitHub Pages: how-to/deploy-github-pages.md
       - Generate PDF: how-to/generate-pdf.md
+      - Dark/Light Mode Toggle: how-to/dark-light-mode-toggle.md
       - Show editing information: how-to/show-edit-information.md
   - Reference:
       - reference/index.md
